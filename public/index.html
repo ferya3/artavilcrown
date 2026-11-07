@@ -24,7 +24,14 @@
   </style>
 </head>
 <body>
-  <!-- برای عوض کردن عکس، فقط مقدار src را عوض کنید -->
-  <img class="hero" src="/images/photo.jpg" alt="Artavil Crown">
+  <!--
+    دو عکس:
+    - public/images/mobile.png  برای موبایل و صفحه‌های عمودی (پیشنهاد: 1080x1920)
+    - public/images/desktop.png برای دسکتاپ و صفحه‌های افقی (پیشنهاد: 1920x1080)
+  -->
+  <picture>
+    <source media="(max-aspect-ratio: 1/1)" srcset="/images/mobile.png">
+    <img class="hero" src="/images/desktop.png" alt="Artavil Crown">
+  </picture>
 </body>
 </html>
