@@ -14,8 +14,15 @@ wrangler.jsonc      تنظیمات Worker و دامنه
 
 ## عوض کردن عکس
 
-عکس خودتان را با همین نام در `public/images/photo.jpg` بگذارید.
-اگر نام یا پسوند دیگری دارد (مثلاً `my.png`)، در `public/index.html` مقدار `src` تگ `<img>` را هم عوض کنید.
+1. عکس خودتان را داخل پوشه `public/images/` کپی کنید.
+2. یا اسمش را `photo.jpg` بگذارید و جایگزین عکس قبلی کنید،
+   یا در `public/index.html` مقدار `src` را به اسم عکس خودتان تغییر دهید، مثلاً:
+   `<img class="hero" src="/images/my-photo.png" alt="Artavil Crown">`
+3. دوباره `npm run deploy` بزنید.
+
+عکس کل صفحه را پر می‌کند (`object-fit: cover`)؛ اگر نسبت عکس با صفحه فرق کند، لبه‌هایش کمی بریده می‌شود.
+برای اینکه بخش مهم عکس دیده شود، در `index.html` مقدار `object-position` را تغییر دهید
+(مثلاً `top` یا `bottom`).
 
 ## اجرا روی کامپیوتر خودتان
 
