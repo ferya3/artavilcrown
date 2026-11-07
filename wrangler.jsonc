@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "artavilcrown",
+  "compatibility_date": "2025-09-01",
+
+  // Static files (index.html, images, ...) are served straight from ./public
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+
+  // Attach the Worker to the domain (the domain must already be a zone in your Cloudflare account)
+  "routes": [
+    { "pattern": "artavilcrown.com", "custom_domain": true },
+    { "pattern": "www.artavilcrown.com", "custom_domain": true }
+  ]
+}

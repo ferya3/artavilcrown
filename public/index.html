@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artavil Crown</title>
+  <meta name="description" content="Artavil Crown">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f3;
+      --text: #1e1a2e;
+      --muted: #6b6578;
+      --accent: #b8912f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14121c;
+        --text: #f2eee4;
+        --muted: #a39fb0;
+        --accent: #d4af37;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 32px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Vazirmatn", system-ui, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      letter-spacing: 0.02em;
+    }
+    h1 span { color: var(--accent); }
+    figure { margin: 0; width: 100%; max-width: 960px; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+    }
+    footer { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Artavil <span>Crown</span></h1>
+  <figure>
+    <img src="/images/photo.jpg" alt="Artavil Crown" width="1600" height="1000">
+  </figure>
+  <footer>artavilcrown.com</footer>
+</body>
+</html>
